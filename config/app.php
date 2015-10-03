@@ -145,6 +145,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Vendors 
+        'Cartalyst\Sentinel\Laravel\SentinelServiceProvider',
+
     ],
 
     /*
@@ -193,6 +196,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        //Vendors 
+        'Activation' => 'Cartalyst\Sentinel\Laravel\Facades\Activation',
+        'Reminder'   => 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
+        'Sentinel'   => 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
 
     ],
 
